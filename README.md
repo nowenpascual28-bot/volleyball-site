@@ -37,5 +37,3 @@ Volleyball Hub is a **responsive web platform** designed for volleyball players,
 - **YouTube Embed** for live match streaming
 
 ---
-
-## 📂 Project Structure
