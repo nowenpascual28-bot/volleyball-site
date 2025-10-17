@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Volleyball Hub</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+<div class="container header-inner">
+<h1>🏐 Volleyball Hub</h1>
+
+<!-- Hamburger icon: three lines -->
+<div id="hamburger" class="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<nav id="nav-menu">
+<ul>
+<li><a href="index.html" class="active">Home</a></li>
+<li><a href="#news">News</a></li>
+<li><a href="#live-matches">Live</a></li>
+<li><a href="#training">Training</a></li>
+<li><a href="#tips">Tips</a></li>
+<li><a href="scoring.html">Full Scores</a></li>
+<li><a href="#about">About</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main>
+<section id="home" class="hero">
+<div class="container hero-inner">
+<h2>Welcome to Volleyball Hub</h2>
+<p>Train smarter • Track live scores • Watch matches • Improve your game</p>
+<div class="hero-actions">
+<a class="btn primary" href="#training">Start Training</a>
+<a class="btn outline" href="scoring.html">View Live Scores</a>
+</div>
+</div>
+</section>
+
+<section id="news" class="section">
+<div class="container">
+<h3 class="section-title">🏐 News & Highlights</h3>
+<div class="news-grid">
+<article class="news-card">
+<img src="images/volleyball.jfif" alt="Tournament" />
+<h4>National League Final: Horizon vs Titans</h4>
+<p>Horizon clinched the title after a five-set thriller — MVP: J. Cruz. Read match notes and top plays.</p>
+</article>
+<article class="news-card">
+<img src="images/volleyball.jfif" alt="Training Camp" />
+<h4>Summer Camp 2025 — Vertical Jump Clinic</h4>
+<p>Register for hands-on jump and plyometric sessions this June with national coaches.</p>
+</article>
+<article class="news-card">
+<img src="images/volleyball.jfif" alt="Player Spotlight" />
+<h4>Player Spotlight: Maria Santos</h4>
+<p>From rookie to league leader in digs — her training routine and mental prep.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section id="live-matches" class="section dark">
+<div class="container">
+<h3 class="section-title">🎥 Live Matches</h3>
+<p>Watch live streams and quick match previews below.</p>
+<div class="live-row">
+<div class="embed">
+<iframe src="https://www.youtube.com/embed/live_stream?channel=UCxW8-TqxHxhYmFLHcTAJb8w" allowfullscreen></iframe>
+</div>
+
+<aside class="live-preview">
+<h4>Top Match Preview</h4>
+<div id="preview-match" class="match-preview">
+<!-- populated by script.js -->
+</div>
+<a class="btn small" href="scoring.html">Open Full Scoreboard</a>
+</aside>
+</div>
+</div>
+</section>
+
+<section id="training" class="section">
+<div class="container">
+<h3 class="section-title">🏋️ Create Your Training Routine</h3>
+<p>Pick a goal and get a focused routine you can repeat each week.</p>
+
+<form id="training-form" class="card">
+<label for="goal">Goal</label>
+<select id="goal" required>
+<option value="strength">Strength (Upper Body)</option>
+<option value="cardio">Cardio (Speed & Agility)</option>
+<option value="jump">Vertical Jump</option>
+<option value="skills">Skills & Technique</option>
+</select>
+<button class="btn primary" type="submit">Generate Routine</button>
+</form>
+
+<div id="generated-routine" class="card result"></div>
+
+<div class="training-grid">
+<div class="train-card">
+<img src="images/volleyball.jfif" alt="Spiking Drill">
+<h4>Spiking Mechanics</h4>
+<p>Focus on your timing, arm swing, and full-body coordination for a more explosive hit.</p>
+</div>
+<div class="train-card">
+<img src="images/volleyball.jfif" alt="Blocking Drill">
+<h4>Defensive Blocking</h4>
+<p>Work on reading attackers and timing your jump for effective blocks at the net.</p>
+</div>
+<div class="train-card">
+<img src="images/volleyball.jfif" alt="Serving Practice">
+<h4>Serving Accuracy</h4>
+<p>Target 6 zones per session and practice consistent toss height and contact timing.</p>
+</div>
+<div class="train-card">
+<img src="images/volleyball.jfif" alt="Setting Drill">
+<h4>Setting Control</h4>
+<p>Do wall-sets and quick-release sets to improve precision and speed.</p>
+</div>
+</div>
+</div>
+</section>
+
+
+<section id="tips" class="section dark">
+<div class="container">
+<h3 class="section-title">💡 Tips & Drills</h3>
+<div class="tips-grid">
+<div class="tip">
+<h4>Serve Consistency</h4>
+<p>Practice the toss line and contact point. Do 50 targeted serves per session focusing on one zone.</p>
+</div>
+<div class="tip">
+<h4>Improve Dig Reaction</h4>
+<p>Work short-burst footwork and partner throw drills. Keep low and watch opponent's shoulders.</p>
+</div>
+<div class="tip">
+<h4>Jump Explosiveness</h4>
+<p>Include depth jumps, single-leg bounds, and heavy resistance squats twice a week.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="about" class="section">
+<div class="container">
+<h3 class="section-title">About Volleyball Hub</h3>
+<p><strong>Volleyball Hub</strong> — built by <strong>Nowen Pascual</strong>. Our mission: help players, coaches, and fans access training, match coverage, and live scoring in one place.</p>
+<ul class="features">
+<li>Live-style scoreboard with set-by-set tracking</li>
+<li>Actionable routines and tips</li>
+<li>News, highlights, and player spotlights</li>
+</ul>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<p>© 2025 Volleyball Hub — Designed for players by players 🏐</p>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
